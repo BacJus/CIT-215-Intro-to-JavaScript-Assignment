@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Java assignment</title>
+</head>
+<body>
+   <label>What language was created to add interactivity to the Web? : <input class="language" type="text"></input></label> <!-- #2 -->
+
+   <script>
+        const inputHold = document.querySelector('.language'); //#4    querySelector selects class language input
+        inputHold.addEventListener('blur', function(){ //addEventListener says wait for text box to lose focus so alert can show
+            const userInput = inputHold.value; //Stores user's input. Also const because not changing
+            alert("Your answer: " + userInput);
+        });
+        
+        const choiceLibrary = prompt("What code library do you prefer? Choose between Vue, React, jQuery "); //#5
+
+        alert("You picked: " + choiceLibrary); //#6
+   </script>
+</body>
+</html>
